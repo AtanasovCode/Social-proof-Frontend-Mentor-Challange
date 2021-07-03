@@ -1,0 +1,138 @@
+body {
+  margin: 10%;
+  background-color: hsl(300, 24%, 96%);
+  font-family: 'Spartan', sans-serif;
+  height: 100vh;
+}
+
+
+.main-container {
+  display: flex;
+  background-color: white;
+  padding-top: 50px;
+}
+
+.body-container {
+  background-color: white;
+}
+
+.title {
+  margin: 10px 350px 10px 30px;
+  font-weight: 900;
+  color: hsl(303, 10%, 53%);
+  font-size: 40px;
+}
+
+.main-text > p {
+  margin: 1px 200px 20px 30px;
+}
+
+.main-container > div:nth-child(1)  {
+  flex: 4;
+}
+
+
+
+.rating-2 {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.rating-3 {
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.stars {
+  margin-right: 30px;
+}
+
+.rating-1, .rating-2, .rating-3 {
+  background-color: hsl(300, 24%, 96%);
+  padding: 10px 20px;
+  display: flex;
+  font-weight: 700;
+}
+
+.reviewers
+{
+  display: flex;
+}
+
+.pfp {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.star-ratings {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+
+.rating-1, .rating-2, .rating-3 {
+  padding: 10px 40px;
+}
+
+
+
+.reviews {
+  display: flex;
+  margin: 50px 10px;
+  background-color: white;
+}
+
+
+
+
+
+.review-1, .review-2, .review-3 {
+  padding: 40px;
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  text-align: left;
+  border-radius: 10px;
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-2 {
+  margin-top: 40px;
+  margin-bottom: -0.1px;
+}
+
+.review-3 {
+  margin-top: 60px;
+  margin-bottom: -10px;
+}
+
+
+.info-reviewer {
+  display: flex;
+  flex-direction: column;
+}
+
+.buyer-status {
+  opacity: 0.6;
+}
+
+
+@media (max-width: 600px)
+{
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .star-ratings {
+    flex-direction: column;
+    display: block;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+}
