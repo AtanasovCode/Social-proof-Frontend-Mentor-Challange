@@ -1,15 +1,15 @@
 body {
-  margin: 10%;
+  margin: 3%;
   background-color: hsl(300, 24%, 96%);
   font-family: 'Spartan', sans-serif;
-  height: 100vh;
+  height: 70vh;
 }
 
 
 .main-container {
   display: flex;
   background-color: white;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .body-container {
@@ -20,7 +20,7 @@ body {
   margin: 10px 350px 10px 30px;
   font-weight: 900;
   color: hsl(303, 10%, 53%);
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .main-text > p {
@@ -90,7 +90,7 @@ body {
 
 
 .review-1, .review-2, .review-3 {
-  padding: 40px;
+  padding: 30px;
   background-color: hsl(300, 43%, 22%);
   color: white;
   text-align: left;
