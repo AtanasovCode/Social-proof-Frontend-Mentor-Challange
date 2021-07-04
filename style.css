@@ -2,7 +2,7 @@ body {
   margin: 3%;
   background-color: hsl(300, 24%, 96%);
   font-family: 'Spartan', sans-serif;
-  height: 70vh;
+  height: 100vh;
 }
 
 
@@ -19,7 +19,7 @@ body {
 .title {
   margin: 10px 350px 10px 30px;
   font-weight: 900;
-  color: hsl(303, 10%, 53%);
+  color: #522053;
   font-size: 50px;
 }
 
@@ -32,26 +32,36 @@ body {
 }
 
 
-
-.rating-2 {
-  margin-left: 30px;
-  margin-top: 15px;
-}
-
-.rating-3 {
-  margin-left: 60px;
-  margin-top: 15px;
-}
-
 .stars {
   margin-right: 30px;
 }
+
+.star-ratings {
+  margin-right: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .rating-1, .rating-2, .rating-3 {
   background-color: hsl(300, 24%, 96%);
   padding: 10px 20px;
   display: flex;
   font-weight: 700;
+  margin: 10px;
+}
+
+.rating-1 {
+  align-self: flex-start;
+}
+
+.rating-2 {
+  align-self: center;
+}
+
+.rating-3 {
+  align-self: flex-end;
 }
 
 .reviewers
@@ -80,9 +90,9 @@ body {
 
 
 .reviews {
+  height: 340px;
   display: flex;
-  margin: 50px 10px;
-  background-color: white;
+  flex-direction: row;;
 }
 
 
@@ -90,7 +100,7 @@ body {
 
 
 .review-1, .review-2, .review-3 {
-  padding: 30px;
+  padding: 50px 30px;
   background-color: hsl(300, 43%, 22%);
   color: white;
   text-align: left;
@@ -100,14 +110,16 @@ body {
   flex-direction: column;
 }
 
+.review-1 {
+  align-self: flex-start;
+}
+
 .review-2 {
-  margin-top: 40px;
-  margin-bottom: -0.1px;
+  align-self: center;
 }
 
 .review-3 {
-  margin-top: 60px;
-  margin-bottom: -10px;
+  align-self: flex-end;
 }
 
 
@@ -120,19 +132,51 @@ body {
   opacity: 0.6;
 }
 
-
-@media (max-width: 600px)
+@media (max-width: 1000px)
 {
+  .review-1, .review-2, .review-3 {
+    align-self: center;
+  }
+}
+
+
+@media (max-width: 700px) {
   .main-container {
     flex-direction: column;
     text-align: center;
   }
-  .star-ratings {
+  .rating-1, .rating-2, .rating-3 {
     flex-direction: column;
-    display: block;
+    align-self: center;
   }
 
   .reviews {
     flex-direction: column;
   }
+
+  .review-1, .review-2, .review-3 {
+    align-self: center;
+  }
+
+  .title {
+    margin: 0px;
+  }
+
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+  background-color: #001122;
+  color: white;
+  margin-top: 600px;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: dodgerblue;
 }
